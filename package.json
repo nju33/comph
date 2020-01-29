@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "name": "static",
+  "description": "This is a static template with no bundling",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nju33/comph.git"
+  },
+  "keywords": [
+    "template",
+    "codesandbox",
+    "static"
+  ],
+  "author": "Ives van Hoorne",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nju33/comph/issues"
+  },
+  "homepage": "https://github.com/nju33/comph",
+  "devDependencies": {
+    "serve": "^11.2.0"
+  }
+}
