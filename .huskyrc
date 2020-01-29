@@ -1,0 +1,7 @@
+{
+  "hooks": {
+    "pre-commit": "lint-staged",
+    "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+    "post-merge": "(git diff 'HEAD@{1}' --name-only | grep package.json > /dev/null) && yarn || :"
+  }
+}

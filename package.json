@@ -1,0 +1,57 @@
+{
+  "name": "comph",
+  "description": "",
+  "version": "0.0.1",
+  "author": "nju33 <nju33.ki@gmail.com>",
+  "homepage": "https://github.com/nju33/comph",
+  "contributors": [
+    "nju33 <nju33.ki@gmail.com>"
+  ],
+  "bugs": {
+    "url": "https://github.com/nju33/comph/issues"
+  },
+  "scripts": {
+    "prepublish": "yarn build && yarn codesandbox",
+    "codesandbox": "run-s codesandbox:*",
+    "codesandbox:image": "gh-pages -d codesandbox/image -b codesandbox/image",
+    "build": "rollup -c",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@rollup/plugin-typescript": "^3.0.0",
+    "@testing-library/dom": "^6.11.1",
+    "@types/jest": "^25.1.0",
+    "@typescript-eslint/eslint-plugin": "^2.18.0",
+    "@typescript-eslint/parser": "^2.18.0",
+    "commitizen": "^4.0.3",
+    "conventional-changelog-cli": "^2.0.31",
+    "document-register-element": "^1.14.3",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-config-xo-space": "^0.22.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "gh-pages": "^2.2.0",
+    "husky": "^4.2.1",
+    "jest": "^25.1.0",
+    "lint-staged": "^10.0.3",
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.0.0-alpha.3.2",
+    "prettier": "^1.19.1",
+    "rollup": "^1.30.1",
+    "ts-jest": "^25.0.0",
+    "typescript": "^3.7.5"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nju33/comph.git"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ]
+}
