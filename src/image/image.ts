@@ -15,10 +15,7 @@ export default class Image extends HTMLImageElement {
   constructor() {
     super();
 
-    const svg = Image.genSVG(this.width, this.height, this.color);
-    const base64Svg = Image.toBase64(svg);
-
-    this.setAttribute('src', base64Svg);
+    setTimeout(this.init, 0);
   }
 
   get width(): number {
@@ -32,4 +29,10 @@ export default class Image extends HTMLImageElement {
   get color(): string {
     return this.getAttribute('color') || '#ccc';
   }
+
+  init = () => {
+    const svg = Image.genSVG(this.width, this.height, this.color);
+
+    this.src = Image.toBase64(svg);
+  };
 }
